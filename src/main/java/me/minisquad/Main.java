@@ -16,9 +16,9 @@ import net.dv8tion.jda.core.OnlineStatus;
  * @version 1.0
  */
 
- public class Main {
+public class Main {
     private static JDA jda;
-
+    
     public static void main(String[] args) {
         try {
             jda = new JDABuilder(Constants.BOT_TOKEN).build();
@@ -32,6 +32,7 @@ import net.dv8tion.jda.core.OnlineStatus;
 
     /**
      * Output consistent logging with data timestamps
+     * 
      * @param log String to output
      */
     public static void log(String log) {
@@ -40,4 +41,4 @@ import net.dv8tion.jda.core.OnlineStatus;
         Date date = new Date();
         System.out.println(dateFormat.format(date) + " " + log);
     }
- }
+}

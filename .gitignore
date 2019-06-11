@@ -18,7 +18,6 @@ buildNumber.properties
 
 # Content files
 Constants.*
-Utilities.*
 
 # Others
 *.DS_Store

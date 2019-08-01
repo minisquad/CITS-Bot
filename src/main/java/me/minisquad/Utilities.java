@@ -37,7 +37,6 @@ public class Utilities extends ListenerAdapter {
                     message.addReaction(emote).queue();
                 }
                 Main.log("Important manual change required. ROLE_ASSIGN_MSGID to ID " + messageID);
-                Constants.ROLE_ASSIGN_MSGID = messageID;
             };
 
             // Purge 50 prior messages

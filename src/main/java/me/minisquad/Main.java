@@ -8,6 +8,7 @@ import java.util.TimeZone;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.JDABuilder;
 import net.dv8tion.jda.core.OnlineStatus;
+import net.dv8tion.jda.core.entities.Game;
 
 /**
  * Main class for the CITS bot discord bot
@@ -25,6 +26,7 @@ public class Main {
             jda.addEventListener(new RoleAssign());
             jda.addEventListener(new Utilities());
             jda.getPresence().setStatus(OnlineStatus.ONLINE);
+            jda.getPresence().setGame(Game.playing(Constants.GAME_STATUS));
         } catch (Exception e) {
             e.printStackTrace();
         }
